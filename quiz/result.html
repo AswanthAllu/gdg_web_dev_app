@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Result</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="dark-mode">
+    <div class="container">
+        <h1 style="color:blue;">🏆 Quiz Completed! 🏆</h1>
+        <p  style="color:rgb(211, 74, 47);font-weight: bold;" id="score">Your Score: </p>
+        <button onclick="restartQuiz()">Practice Again</button>
+        <button onclick="goHome()">Home</button>
+    </div>
+    <script>
+        document.getElementById("score").innerText = "Your Score: " + localStorage.getItem("quizScore");
+        function restartQuiz() { window.location.href = "quiz.html"; }
+        function goHome() { window.location.href = "index.html"; }
+    </script>
+</body>
+</html>

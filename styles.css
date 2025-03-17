@@ -1,0 +1,86 @@
+/* Global Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #6dd5fa, #2980b9);
+    color: white;
+    text-align: center;
+}
+
+/* Navbar */
+header {
+    background: #1e3c72;
+    padding: 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    animation: fadeInDown 1s ease-in-out;
+}
+
+/* Video Player */
+.video-container {
+    margin-top: 30px;
+}
+
+.video-container iframe {
+    width: 80%;
+    height: 400px;
+    border-radius: 10px;
+    border: 3px solid white;
+}
+
+/* Quiz Button */
+.quiz-btn {
+    display: inline-block;
+    background: #ff5733;
+    color: white;
+    padding: 12px 20px;
+    font-size: 18px;
+    margin-top: 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.quiz-btn:hover {
+    background: #c70039;
+}
+
+/* Footer */
+footer {
+    background: #222;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+footer p {
+    font-size: 14px;
+}
+
+.social-icons a img {
+    width: 30px;
+    margin: 10px;
+    transition: 0.3s;
+}
+
+.social-icons a img:hover {
+    transform: scale(1.2);
+}
+
+/* Animations */
+@keyframes fadeInDown {
+    from { transform: translateY(-20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+.footer-logos {
+    height: 25px;
+    width: 25px;
+    color: #96948f;
+    margin:10px;
+}
+
+
+}
