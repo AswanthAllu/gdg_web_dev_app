@@ -6,7 +6,7 @@ const questions = [
 
 let currentQuestionIndex = 0;
 let score = 0;
-let timer = 1200; // 20 minutes
+let timer = 10; // 20 minutes
 
 function loadQuestion() {
     let q = questions[currentQuestionIndex];
