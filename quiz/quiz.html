@@ -3,17 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quiz</title>
+    <title>Tech Quiz</title>
     <link rel="stylesheet" href="styles.css">
 </head>
-<body class="dark-mode">
-    <div class="quiz-container">
-        <h1>🚀 Tech Quiz</h1>
-        <div id="timer">⏳ Time Left: <span id="time">20:00</span></div>
-        <div id="question-container"></div>
-        <form id="options-container"></form>
-        <button id="next-btn">Next Question</button>
+<body style="font-family: 'Poppins', sans-serif; text-align: center; margin: 0; height: 100vh; display: flex; align-items: center; justify-content: center; position: relative; overflow: hidden;">
+
+    <!-- 🕒 Fixed Navbar with Tech Quiz Title -->
+    <div style="position: fixed; top: 0; left: 0; width: 100%; padding: 12px; text-align: center; font-size: 18px; font-weight: bold; color: #ffcc00; display: flex; justify-content: space-between; align-items: center;">
+        <span style="color: #d500f9; font-size: 22px; font-weight: bold; padding-left: 20px;">🚀 Tech Quiz</span>
+        <span style="flex-grow: 1;"></span>
+        <span style="padding-right: 20px;">⏳ Time Left: <span id="time">20:00</span></span>
     </div>
+
+    <!-- 🚀 Quiz Container -->
+    <div style="background: #fff; padding: 20px; border-radius: 15px; box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2); width: 50%; margin-top: 60px;">
+        <div id="question-container" style="font-size: 20px; font-weight: bold; color: #222;"></div>
+        <form id="options-container"></form>
+        <button id="next-btn" style="background: #d50000; color: white; border: none; padding: 12px 20px; font-size: 16px; border-radius: 5px; cursor: pointer; transition: 0.3s ease-in-out; margin-top: 10px;">Next Question</button>
+    </div>
+
     <script src="script.js"></script>
 </body>
 </html>

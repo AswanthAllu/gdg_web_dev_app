@@ -12,12 +12,12 @@ body {
     position: relative;
 }
 
-/* 🌌 Animated Blue Sky Background */
+/* 🌌 Animated Blue & Reddish Gradient Background */
 .animated-bg {
     position: fixed;
     width: 100%;
     height: 100%;
-    background: linear-gradient(-45deg, #6dd5fa, #2193b0, #1e88e5, #6dd5fa);
+    background: linear-gradient(-45deg, #ff6b6b, #ff3d00, #1e88e5, #6dd5fa);
     background-size: 400% 400%;
     animation: gradientAnimation 8s ease infinite;
     z-index: -1;
@@ -29,18 +29,18 @@ body {
     100% { background-position: 0% 50%; }
 }
 
-/* 🚀 Light Blue Theme Styling */
+/* 🚀 Reddish Theme Styling */
 .dark-mode {
-    background: #e3f2fd;
-    color: #01579b;
+    background: #ffebee;
+    color: #b71c1c;
 }
 
 /* 🔥 Quiz Container */
 .quiz-container {
-    background: rgba(255, 255, 255, 0.9);
+    background: rgba(255, 255, 255, 0.95);
     padding: 20px;
     border-radius: 15px;
-    box-shadow: 0px 0px 15px rgba(0, 123, 255, 0.2);
+    box-shadow: 0px 0px 15px rgba(255, 0, 0, 0.3);
     width: 50%;
 }
 
@@ -48,24 +48,24 @@ body {
 h1 {
     font-size: 28px;
     font-family: 'Roboto', sans-serif;
-    color: #e8edf3;
-    text-shadow: 2px 2px 5px rgba(0, 123, 255, 0.3);
+    color: #fff;
+    text-shadow: 2px 2px 5px rgba(255, 0, 0, 0.4);
 }
-p{
-    color: #e8edf3;
 
+p {
+    color: #fff;
 }
 
 /* 🎯 Timer */
 #timer {
     font-size: 18px;
     margin-bottom: 10px;
-    color: #1565c0;
+    color: #d32f2f;
 }
 
 /* ✨ Buttons */
 button {
-    background: #0d3f75;
+    background: #d50000;
     color: white;
     border: none;
     padding: 12px 20px;
@@ -77,9 +77,9 @@ button {
 }
 
 button:hover {
-    background: #0056b3;
+    background: #b71c1c;
     transform: scale(1.05);
-    box-shadow: 0px 4px 15px rgba(0, 123, 255, 0.5);
+    box-shadow: 0px 4px 15px rgba(255, 0, 0, 0.5);
 }
 
 /* 🎯 Radio Button Styling */
@@ -87,10 +87,11 @@ input[type="radio"] {
     display: none;
 }
 
+/* 🟦 Default Blue Background for Options */
 label {
     display: block;
     font-family: 'Roboto', sans-serif;
-    background: #1e88e5;
+    background: #1e88e5; /* Blue background initially */
     padding: 10px;
     margin: 10px 0;
     border-radius: 5px;
@@ -103,6 +104,7 @@ label:hover {
     background: #1565c0;
 }
 
+/* 🟡 Selected Option Turns Yellow with Black Text */
 input[type="radio"]:checked + label {
     background: #ffcc00;
     color: #222;
