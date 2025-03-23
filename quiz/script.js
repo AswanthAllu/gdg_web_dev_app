@@ -1,7 +1,14 @@
 const questions = [
-    { question: "What does HTML stand for?", options: ["Hyper Text Markup Language", "High Tech Machine Learning", "Home Tool Markup Language"], answer: "Hyper Text Markup Language" },
-    { question: "Which language runs in a web browser?", options: ["JavaScript", "Python", "C++"], answer: "JavaScript" },
-   
+    { 
+        question: "What does HTML stand for?", 
+        options: ["Hyper Text Markup Language", "High Tech Machine Learning", "Home Tool Markup Language"], 
+        answer: "Hyper Text Markup Language" 
+    },
+    { 
+        question: "Which language runs in a web browser?", 
+        options: ["JavaScript", "Python", "C++"], 
+        answer: "JavaScript" 
+    }
 ];
 
 let currentQuestionIndex = 0;
@@ -12,16 +19,42 @@ function loadQuestion() {
     let q = questions[currentQuestionIndex];
     document.getElementById("question-container").innerText = q.question;
     document.getElementById("options-container").innerHTML = q.options.map(opt => 
-        `<input type="radio" name="answer" id="${opt}" value="${opt}">
-         <label for="${opt}">${opt}</label>`
+        `<input type="radio" name="answer" id="${opt}" value="${opt}" onclick="checkAnswer(this)">
+         <label for="${opt}" id="label-${opt}">${opt}</label>`
     ).join("");
+}
+
+function checkAnswer(selectedOption) {
+    let correctAnswer = questions[currentQuestionIndex].answer;
+    let selectedValue = selectedOption.value;
+
+    let labels = document.querySelectorAll("label");
+    labels.forEach(label => label.classList.remove("correct", "wrong"));
+
+    if (selectedValue === correctAnswer) {
+        document.getElementById(`label-${selectedValue}`).classList.add("correct");
+    } else {
+        document.getElementById(`label-${selectedValue}`).classList.add("wrong");
+        document.getElementById(`label-${correctAnswer}`).classList.add("correct"); // Highlight correct answer
+    }
 }
 
 document.getElementById("next-btn").addEventListener("click", () => {
     let selected = document.querySelector("input[name='answer']:checked");
-    if (selected && selected.value === questions[currentQuestionIndex].answer) score++;
-    if (++currentQuestionIndex < questions.length) loadQuestion();
-    else { localStorage.setItem("quizScore", score); window.location.href = "result.html"; }
+    
+    if (!selected) {
+        alert("Please select an answer before proceeding!");
+        return;
+    }
+
+    if (selected.value === questions[currentQuestionIndex].answer) score++;
+
+    if (++currentQuestionIndex < questions.length) {
+        loadQuestion();
+    } else {
+        localStorage.setItem("quizScore", score);
+        window.location.href = "result.html";
+    }
 });
 
 loadQuestion();
@@ -40,4 +73,5 @@ function startTimer() {
         }
     }, 1000);
 }
+
 startTimer();

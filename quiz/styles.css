@@ -12,7 +12,7 @@ body {
     position: relative;
 }
 
-/* 🌌 Animated Blue & Reddish Gradient Background */
+/* 🌌 Animated Gradient Background */
 .animated-bg {
     position: fixed;
     width: 100%;
@@ -27,12 +27,6 @@ body {
     0% { background-position: 0% 50%; }
     50% { background-position: 100% 50%; }
     100% { background-position: 0% 50%; }
-}
-
-/* 🚀 Reddish Theme Styling */
-.dark-mode {
-    background: #ffebee;
-    color: #b71c1c;
 }
 
 /* 🔥 Quiz Container */
@@ -91,7 +85,7 @@ input[type="radio"] {
 label {
     display: block;
     font-family: 'Roboto', sans-serif;
-    background: #1e88e5; /* Blue background initially */
+    background: #1e88e5; /* Default Blue */
     padding: 10px;
     margin: 10px 0;
     border-radius: 5px;
@@ -100,13 +94,21 @@ label {
     color: white;
 }
 
+/* 🎯 Hover Effect */
 label:hover {
     background: #1565c0;
 }
 
-/* 🟡 Selected Option Turns Yellow with Black Text */
-input[type="radio"]:checked + label {
-    background: #ffcc00;
-    color: #222;
+/* ✅ Correct Answer - Green */
+.correct {
+    background: #4caf50 !important; /* Green */
+    color: white !important;
+    font-weight: bold;
+}
+
+/* ❌ Wrong Answer - Red */
+.wrong {
+    background: #d32f2f !important; /* Red */
+    color: white !important;
     font-weight: bold;
 }
