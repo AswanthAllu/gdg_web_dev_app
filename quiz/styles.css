@@ -50,14 +50,14 @@ p {
     color: #fff;
 }
 
-/* 🎯 Timer */
+/*  Timer */
 #timer {
     font-size: 18px;
     margin-bottom: 10px;
     color: #d32f2f;
 }
 
-/* ✨ Buttons */
+/*  Buttons */
 button {
     background: #d50000;
     color: white;
@@ -76,12 +76,12 @@ button:hover {
     box-shadow: 0px 4px 15px rgba(255, 0, 0, 0.5);
 }
 
-/* 🎯 Radio Button Styling */
+/* Radio Button Styling */
 input[type="radio"] {
     display: none;
 }
 
-/* 🟦 Default Blue Background for Options */
+/*Default Blue Background for Options */
 label {
     display: block;
     font-family: 'Roboto', sans-serif;
@@ -94,7 +94,7 @@ label {
     color: white;
 }
 
-/* 🎯 Hover Effect */
+/* Hover Effect */
 label:hover {
     background: #1565c0;
 }
@@ -106,25 +106,12 @@ label:hover {
     font-weight: bold;
 }
 
-/* ❌ Wrong Answer - Red */
+/*  Wrong Answer - Red */
 .wrong {
     background: #d32f2f !important; /* Red */
     color: white !important;
     font-weight: bold;
 }
 .nxt-btn{
-    background-color: transparent;
-     color: #d500f9;
-      border: solid 2px #d500f9;
-       padding: 12px 20px;
-        font-size: 16px; 
-        border-radius: 5px;
-         cursor: pointer;
-          transition: 0.3s ease-in-out;
-           margin-top: 10px;
-           font-weight: bold;
-}
-.nxt-btn:hover{
-    background-color: #d500f9;
-    color: white;
+    
 }

@@ -8,18 +8,27 @@
 </head>
 <body style="font-family: 'Poppins', sans-serif; text-align: center; margin: 0; height: 100vh; display: flex; align-items: center; justify-content: center; position: relative; overflow: hidden;">
 
-    <!-- 🕒 Fixed Navbar with Tech Quiz Title -->
+    <!-- Fixed Navbar with Tech Quiz Title -->
     <div style="position: fixed; top: 0; left: 0; width: 100%; padding: 12px; text-align: center; font-size: 18px; font-weight: bold; color: #ffcc00; display: flex; justify-content: space-between; align-items: center;">
-        <span style="color: #d500f9; font-size: 22px; font-weight: bold; padding-left: 20px;">🚀 Tech Quiz</span>
+        <span style="color: #d500f9; font-size: 22px; font-weight: bold;">🚀 Tech Quiz</span>
         <span style="flex-grow: 1;"></span>
-        <span style="padding-right: 20px;">⏳ Time Left: <span id="time">20:00</span></span>
+        <span style="color:red !important;margin-right: 26px;">⏳ Time Left: <span id="time">20:00</span></span>
     </div>
 
     <!-- 🚀 Quiz Container -->
     <div style="background: #fff; padding: 20px; border-radius: 15px; box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2); width: 50%; margin-top: 60px;">
         <div id="question-container" style="font-size: 20px; font-weight: bold; color: #222;"></div>
         <form id="options-container"></form>
-        <button class="nxt-btn" id="next-btn" >Next Question</button>
+        <button style="background-color: transparent;
+        color: #d500f9;
+         border: solid 4px #d500f9;
+          padding: 12px 20px;
+           font-size: 16px; 
+           border-radius: 5px;
+            cursor: pointer;
+             transition: 0.3s ease-in-out;
+              margin-top: 10px;
+              font-weight: bold;" id="next-btn" >Next</button>
     </div>
 
     <script src="script.js"></script>
