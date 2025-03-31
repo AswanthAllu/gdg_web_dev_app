@@ -41,7 +41,7 @@ const quizQuestions = [
         answer: "color:red; font-size:32px;"
     },
     { 
-        question: "3.What does the backend of a website handle?", 
+        question: "9.What does the backend of a website handle?", 
         options: ["User interactions on the webpage", "Styling and layout of a website", "Database management and server-side logic", "Animations and visual effects"], 
         answer: "Database management and server-side logic" 
     },
