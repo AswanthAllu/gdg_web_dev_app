@@ -1,56 +1,56 @@
 const quizQuestions = [
     {
-        question: "1. What does HTML stand for?",
-        options: ["Hyper Text Markup Language", "High-Level Text Language", "Hyper Transfer Markup Language", "Hyper Text Machine Language"],
-        answer: "Hyper Text Markup Language"
-    },
-    { 
-        question: "2.Which of the following is a frontend technology?", 
-        options: ["Python", "HTML", "Node.js", "MongoDB"], 
-        answer: "HTML" 
-    },
-   
-    {
-        question: "3. Which of the following is used to structure the content of a webpage?",
-        options: ["JavaScript", "CSS", "HTML", "Python"],
-        answer: "HTML"
+        question: "1. What does “VS Code” stand for?",
+        options: ["Visual Source Code", "Visual Studio Code", "Version Source Code", "Verified Studio Code"],
+        answer: "Visual Studio Code"
     },
     {
-        question: "4. What does CSS stand for?",
-        options: ["Computer Style Sheets", "Cascading Style System", "Creative Styling System", "Cascading Style Sheets"],
-        answer: "Cascading Style Sheets"
+        question: "2. Which company developed VS Code?",
+        options: ["Apple", "Google", "Microsoft", "Adobe"],
+        answer: "Microsoft"
     },
     {
-        question: "5. Which of the following is NOT a valid CSS property?",
-        options: ["color", "font-size", "background-color", "create-box"],
-        answer: "create-box"
+        question: "3. What is the primary use of VS Code?",
+        options: ["Video editing", "Writing and debugging code", "Photo editing", "Data analysis"],
+        answer: "Writing and debugging code"
     },
     {
-        question: "6. In CSS, how do you select an element by its class?",
-        options: ["#classname", ".classname", "classname", "@classname"],
-        answer: ".classname"
+        question: "4. VS Code is mainly used for which type of development?",
+        options: ["Graphic design", "Web and software development", "Game development only", "Mobile-only development"],
+        answer: "Web and software development"
     },
     {
-        question: "7. What are the four components of the CSS Box Model?",
-        options: ["Width, Height, Background, Border", "Padding, Margin, Border, Content", "Style, Layout, Color, Font", "Class, ID, Tag, Attribute"],
-        answer: "Padding, Margin, Border, Content"
+        question: "5. Which language is NOT natively supported by VS Code?",
+        options: ["JavaScript", "Python", "C++", "Klingon"],
+        answer: "Klingon"
     },
     {
-        question: "8. Which of the following is a correct example of a CSS rule?",
-        options: ["color:red; font-size:32px;", "color = red; font-size = 32px;", "color - red; font-size - 32px;", "color:red font-size:32px;"],
-        answer: "color:red; font-size:32px;"
-    },
-    { 
-        question: "9.What does the backend of a website handle?", 
-        options: ["User interactions on the webpage", "Styling and layout of a website", "Database management and server-side logic", "Animations and visual effects"], 
-        answer: "Database management and server-side logic" 
+        question: "6. What is the purpose of extensions in VS Code?",
+        options: ["Add visual effects", "Add new functionalities and support for more languages", "Slow down the editor", "Change your hardware"],
+        answer: "Add new functionalities and support for more languages"
     },
     {
-        question: "10. Which of the following statements is TRUE?",
-        options: ["HTML is used for styling a webpage.", "CSS is responsible for the structure of a webpage.", "HTML and CSS work together to create a webpage.", "CSS is used to create backend logic for websites."],
-        answer: "HTML and CSS work together to create a webpage."
+        question: "7. Which extension helps with auto-completion and AI-based code suggestions?",
+        options: ["Prettier", "GitLens", "Copilot", "Code Runner"],
+        answer: "Copilot"
+    },
+    {
+        question: "8. What is the shortcut to open the terminal in VS Code?",
+        options: ["Ctrl + Shift + T", "Ctrl + ` (backtick)", "Ctrl + Alt + N", "Ctrl + Q"],
+        answer: "Ctrl + ` (backtick)"
+    },
+    {
+        question: "9. Which extension is useful for formatting code consistently?",
+        options: ["Bracket Pair Colorizer", "Prettier", "Live Server", "IntelliSense"],
+        answer: "Prettier"
+    },
+    {
+        question: "10. Why do developers prefer VS Code over other editors?",
+        options: ["It's lightweight and open source", "It has built-in Git and extension support", "It supports multiple programming languages", "All of the above"],
+        answer: "All of the above"
     }
 ];
+
 
 let currentQuestionIndex = 0;
 let score = 0;
